@@ -6,8 +6,10 @@ activityCompose = "1.8.2"
 junit = "4.13.2"
 testExtJunit = "1.1.5"
 espressoCore = "3.5.1"
-
-
+core-ktx = "1.9.0"
+appcompat = "1.6.1"
+material = "1.11.0"
+kotlinCompilerExtension = "1.4.3"
 
 [libraries]
 compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
@@ -19,9 +21,19 @@ activity-compose = { group = "androidx.activity", name = "activity-compose", ver
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "testExtJunit" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "core-ktx" }
+appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "appcompat" }
+material = { group = "com.google.android.material", name = "material", version.ref = "material" }
+
+# Dependencies of the included build-logic
+android-gradlePlugin = { group = "com.android.tools.build", name = "gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { group = "org.jetbrains.kotlin", name = "kotlin-gradle-plugin", version.ref = "kotlin" }
 
 
 [plugins]
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
 android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
 android-library = { id ="com.android.library", version.ref = "androidGradlePlugin" }
+
+# custom plugins defined
+common-android-library-compose = { id = "gradlePlugins.android.library.compose", version = "unspecified" }

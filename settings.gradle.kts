@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("build-logic")
     repositories {
         google()
         mavenCentral()
@@ -15,3 +16,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "GradleConventionPlugins"
 include(":app")
+include(":articles-ui")
+include(":bookmarks-ui")
