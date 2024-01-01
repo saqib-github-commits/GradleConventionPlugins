@@ -37,3 +37,6 @@ android-library = { id ="com.android.library", version.ref = "androidGradlePlugi
 
 # custom plugins defined
 common-android-library-compose = { id = "gradlePlugins.android.library.compose", version = "unspecified" }
+common-android-application-compose = { id = "gradlePlugins.android.application.compose", version = "unspecified" }
+common-android-application = { id = "gradlePlugins.android.application", version = "unspecified" }
+common-android-library = { id = "gradlePlugins.android.library", version = "unspecified" }
